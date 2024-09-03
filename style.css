@@ -1,0 +1,279 @@
+/* Нульові стилі для вашого сайту */
+
+/* Загальні скидання */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Скидання стилів для html та body */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+/* Скидання стилів для заголовків та параграфів */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+/* Скидання стилів для зображень */
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+    display: block;
+}
+
+/* Скидання стилів для посилань */
+a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Скидання стилів для списків */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Скидання стилів для кнопок */
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Скидання стилів для навігаційних елементів */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Скидання стилів для секцій */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Загальні стилі для сторінки */
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Стили для хедера */
+header {
+    background-color: #333;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f2a365;
+}
+
+/* Секція банера */
+.banner {
+    background-image: url("http://surl.li/ktijfq");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.banner .btn {
+    background-color: #f2a365;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #e38e48;
+}
+
+/* Секція шеф-кухарів */
+.chefs {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.chefs h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.chefs p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.chef-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card_img {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card_title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5D5A88;
+}
+
+.card_subtitle {
+    font-size: 18px;
+    color: #8D8BA7;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 15px;
+}
+
+.card_text {
+    font-size: 16px;
+    color: #9795B5;
+}
+
+/* Секція галереї */
+.gallery {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galary_img {
+    width: 280px;
+    height: 280px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
